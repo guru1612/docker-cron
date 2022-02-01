@@ -1,2 +1,2 @@
-curl -k -u admin:admin -XPOST "http://150.136.80.48:53710/monitoringlog/_delete_by_query" -H 'Content-Type: application/json' -d '{"query":{"range":{"createdOn":{"lt":"now-2d","format" : "yyyy-MM-dd HH:mm:ss"}}}}'
-curl -k -u admin:admin -XPOST "http://150.136.80.48:53710/historylog/_delete_by_query" -H 'Content-Type: application/json' -d '{"query":{"range":{"timestamp":{"lt":"now-2d","format" : "yyyy-MM-dd HH:mm:ss"}}}}'
+curl -k -u admin:admin -XPOST "http://<Elasticsearch ip and port>/monitoringlog/_delete_by_query" -H 'Content-Type: application/json' -d '{"query":{"range":{"createdOn":{"lt":"now-2d","format" : "yyyy-MM-dd HH:mm:ss"}}}}'
+curl -k -u admin:admin -XPOST "http://<Elasticsearch ip and port>/historylog/_delete_by_query" -H 'Content-Type: application/json' -d '{"query":{"range":{"timestamp":{"lt":"now-2d","format" : "yyyy-MM-dd HH:mm:ss"}}}}'
