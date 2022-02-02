@@ -2,4 +2,4 @@
 
 1. change the URL of elasticsearch in SCRIPT.SH file
 
-2. run the start_sron.sh 
+2. run the start_cron.sh 
